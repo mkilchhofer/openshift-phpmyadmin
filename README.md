@@ -1,5 +1,5 @@
 # About
-The official upstream Docker image from phpmyadmin isn't compatible with OpenShift Online. This is because they don't allow you to run stuff insides containers as `root`.
+The official upstream Docker image from [phpmyadmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) isn't compatible with OpenShift Online. This is because OpenShift don't allow you to run stuff insides containers as `root`.
 
 # How to configure this image on OpenShift
 
@@ -23,3 +23,4 @@ And upload it to OpenShift:
 oc create -f secret.yaml
 ```
 ## Environtment Variables
+![openshift envionment variables](https://github.com/mkilchhofer/openshift-phpmyadmin/raw/master/docs/images/openshift_envionment_variables.png "OpenShift Envionment Variables")
